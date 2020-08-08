@@ -1,4 +1,4 @@
-İl bazında değerlendirme yapmak için okullardan toplanılan sonuçları değerlendiren windows form uygulaması.
+İl bazında değerlendirme yapmak için okullardan toplanılan sonuçları değerlendiren windows form uygulaması. Derlenmiş uygulama dosyası https://yadi.sk/d/pqzh6zBgyHaLTw
 
 <b>LGS için</b> File dizininde bulunan yönerge doğrultusunda okullardan LGS sonuçlarını ilçe ilçe klasörleyiniz. Ana klasörü seçerek ilçe içerisindeki tüm dosyaları okur, okul, ilçe ve il ortalamalarını hesaplayabilirsiniz.
 
