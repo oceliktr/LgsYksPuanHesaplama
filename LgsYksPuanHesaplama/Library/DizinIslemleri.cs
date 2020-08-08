@@ -1,14 +1,10 @@
-﻿using System;
+﻿using LgsYksPuanHesaplama.Model;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WindowsFormsApp1.Model;
 
-namespace WindowsFormsApp1.Library
+namespace LgsYksPuanHesaplama.Library
 {
-   public class DizinIslemleri
+    public class DizinIslemleri
     {
         public List<DosyaInfo> DizindekiDosyalariListele(string dizinAdresi)
         {

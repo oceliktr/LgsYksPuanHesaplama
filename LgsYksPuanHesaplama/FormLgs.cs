@@ -1,16 +1,16 @@
-﻿using Microsoft.Office.Interop.Excel;
+﻿using LgsYksPuanHesaplama.Library;
+using LgsYksPuanHesaplama.Model;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
-using WindowsFormsApp1.Library;
-using WindowsFormsApp1.Model;
 using Application = System.Windows.Forms.Application;
 using DataTable = System.Data.DataTable;
 
-namespace WindowsFormsApp1
+namespace LgsYksPuanHesaplama
 {
     public partial class FormLgs : Form
     {
@@ -35,6 +35,8 @@ namespace WindowsFormsApp1
 
         private void btnBasla_Click(object sender, EventArgs e)
         {
+
+            sonucList.Clear();
             timer1.Enabled = true; //sayaç başlasın
 
             backgroundWorker1.RunWorkerAsync();

@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace LgsYksPuanHesaplama
 {
     partial class FormYks
     {

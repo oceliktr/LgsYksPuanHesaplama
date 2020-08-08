@@ -1,14 +1,14 @@
 ﻿using ExcelDataReader;
+using Microsoft.Office.Interop.Excel;
 using System.Data;
 using System.IO;
-using Microsoft.Office.Interop.Excel;
 using DataTable = System.Data.DataTable;
 
-namespace WindowsFormsApp1.Model
+namespace LgsYksPuanHesaplama.Library
 {
     public static class ExcelUtil
     {
-     
+
         public static DataTable ExcelToDataTable(string fileName)
         {
             using (var stream = File.Open(fileName, FileMode.Open, FileAccess.Read))
@@ -22,19 +22,15 @@ namespace WindowsFormsApp1.Model
                             UseHeaderRow = true
                         }
                     });
-
-                    //Get all the Tables
                     DataTableCollection table = result.Tables;
-                    //Store it in DataTable
                     DataTable resultTable = table[reader.Name];
-                    //return
                     return resultTable;
                 }
             }
         }
         public static void HucreSitili(Worksheet calismaSayfasi, int satirBaslangici, int satirGenisligi, int kayitSayisi)
         {
-            Range baslik2 =calismaSayfasi.Range[calismaSayfasi.Cells[1, 1], calismaSayfasi.Cells[satirBaslangici, satirGenisligi]];
+            Range baslik2 = calismaSayfasi.Range[calismaSayfasi.Cells[1, 1], calismaSayfasi.Cells[satirBaslangici, satirGenisligi]];
             baslik2.EntireRow.Font.Bold = true; //bold yap
             baslik2.Font.Size = 10;
             baslik2.Style.HorizontalAlignment = XlHAlign.xlHAlignCenter; //hücreyi yatay ortala
@@ -42,7 +38,7 @@ namespace WindowsFormsApp1.Model
             baslik2.Cells.WrapText = true; //Metni kaydır
             baslik2.Borders.LineStyle = XlLineStyle.xlContinuous;
 
-            Range veriler = calismaSayfasi.Range[calismaSayfasi.Cells[satirBaslangici + 1, 1],calismaSayfasi.Cells[kayitSayisi + satirBaslangici, satirGenisligi]];
+            Range veriler = calismaSayfasi.Range[calismaSayfasi.Cells[satirBaslangici + 1, 1], calismaSayfasi.Cells[kayitSayisi + satirBaslangici, satirGenisligi]];
             veriler.Font.Size = 9;
             veriler.Style.HorizontalAlignment = XlHAlign.xlHAlignCenter; //hücreyi yatay ortala
             veriler.Style.VerticalAlignment = XlHAlign.xlHAlignCenter; //hücreyi dikey ortala

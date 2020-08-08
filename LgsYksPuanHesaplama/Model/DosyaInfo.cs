@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WindowsFormsApp1.Model
+namespace LgsYksPuanHesaplama.Model
 {
     public class DosyaInfo
     {

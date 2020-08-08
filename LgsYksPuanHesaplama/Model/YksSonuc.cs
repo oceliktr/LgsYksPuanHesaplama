@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WindowsFormsApp1.Model
+﻿namespace LgsYksPuanHesaplama.Model
 {
-   public class YksSonuc
+    public class YksSonuc
     {
         public string Kategori { get; set; }
         public string Tckimlik { get; set; }
@@ -60,6 +54,7 @@ namespace WindowsFormsApp1.Model
         public decimal BiyolojiNet { get; set; }
         public bool BiyolojiGirdi { get; set; }
         public decimal ToplamAytNet { get; set; }
+        public bool ToplamAytGirdi { get; set; }
         public int TurkceDogru { get; set; }
         public int TurkceYanlis { get; set; }
         public decimal TurkceNet { get; set; }
@@ -88,6 +83,7 @@ namespace WindowsFormsApp1.Model
         public decimal EsitAgirlikPuanYuzde { get; set; }
         public decimal YabanciDilPuanYuzde { get; set; }
         public decimal ToplamTytNet { get; set; }
-        
+        public bool ToplamTytGirdi { get; set; }
+
     }
 }

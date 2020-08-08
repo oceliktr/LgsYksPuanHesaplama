@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1.Model
+﻿namespace LgsYksPuanHesaplama.Model
 {
     public class LgsSonuc
     {

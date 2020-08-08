@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace LgsYksPuanHesaplama
 {
     partial class FormGiris
     {
@@ -38,7 +38,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources._23091101_2020_lgs;
+            this.pictureBox2.Image = global::LgsYksPuanHesaplama.Properties.Resources._23091101_2020_lgs;
             this.pictureBox2.Location = new System.Drawing.Point(49, 39);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(206, 200);
@@ -51,7 +51,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources._5e7d8b5b55427e0830e29e8b;
+            this.pictureBox1.Image = global::LgsYksPuanHesaplama.Properties.Resources._5e7d8b5b55427e0830e29e8b;
             this.pictureBox1.Location = new System.Drawing.Point(303, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 200);
